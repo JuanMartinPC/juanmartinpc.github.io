@@ -1,0 +1,403 @@
+*{
+    color: rgb(255, 219, 175);
+}
+
+body{
+    background-color: rgb(26, 26, 26);
+}
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                      ESTILOS PARA ESCRITORIO                                                     */
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+@media screen and (min-width:1270px) {
+    .header{
+        position: relative;
+        z-index: 100;
+        background-image: url("https://images.alphacoders.com/458/thumb-1920-458169.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-bottom-left-radius: 25%;
+        border-bottom-right-radius:  25%;
+    }
+    
+    .header__nav{
+        position: relative;
+        z-index: 50;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .header__nav-div{
+        display: inline-block;
+    }
+    
+    .header__nav-div h1{
+        margin-left: 25px;
+    }
+    
+    .header__nav-div a{
+        color: bisque;
+        text-decoration: none;
+        font-style: none;
+        font-size: 20px;
+        margin-left: 1000px;
+    }
+    
+    
+    .texto__header{
+        position: relative;
+        z-index: 1;
+        font-size: 40px;
+        padding: 100px;
+        text-align: center;
+        animation: header 2s backwards 0s;
+    }
+    
+    .texto__header-celular{
+        display: none;
+    }
+
+    .texto__header-span{
+        font-size: 130px;
+    }
+    
+    .texto__header p, .texto__header h1, .texto__header h3{
+        -webkit-text-stroke: 0.7px gray;
+    }
+    
+    @keyframes header {
+        
+        0% {top: -1000px; z-index: 1;}
+        100% {top: 0px; z-index: 1;}
+    }
+    
+    .parallax{
+        background-image: url("https://www.techgamingreport.com/wp-content/uploads/2021/08/how-to-become-a-web-developer.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 100px 0px;
+        padding-top: 250px;
+        width: 100%;
+        height: 60vh;
+    }
+    
+    .about__item{
+        text-align: center;
+        margin: 100px 20px;
+        font-size: 30px;
+    }
+
+    .knowledge{
+        position: relative;
+        top: 250px;
+    }
+
+    .knowledge__item{
+        text-align: center;
+        margin: 100px 20px;
+        font-size: 60px;
+    }
+
+    .contenedor__flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border-top-left-radius: 25%;
+        border-top-right-radius: 25%;
+        animation: fade_id 2s backwards 10s;
+    }
+    
+    .contenido__flex{
+        width: 40%;
+        background-image: url("https://images.alphacoders.com/458/thumb-1920-458169.jpg");
+        padding: 100px;
+        border-bottom-left-radius: 25%;
+        border-bottom-right-radius: 25%;
+        margin-bottom: 200px;
+    
+    }
+    
+    @keyframes fade_id{
+        0% {opacity: 0;;}
+        100% {opacity: 1;}
+    }
+
+
+}
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                      ESTILOS PARA TABLETS                                                        */
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+@media screen and (max-width: 1270px) {
+    
+    .header{
+        position: relative;
+        height: 40vh;
+        z-index: 100;
+        background-image: url("https://images.alphacoders.com/458/thumb-1920-458169.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .header__nav{
+        position: relative;
+        z-index: 50;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .header__nav-div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .header__nav-div h1{
+        margin-left: 25px;
+    }
+    
+    .header__nav-div a{
+        display: none;
+        color: bisque;
+        text-decoration: none;
+        font-style: none;
+        font-size: 50px;
+        margin-left: 70%;
+    }
+    
+    
+    .texto__header{
+        position: relative;
+        z-index: 1;
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+        animation: header 2s backwards 0s;
+    }
+
+    .texto__header-celular{
+        display: none;
+    }
+    
+    .texto__header-span{
+        font-size: 70px;
+    }
+    
+    .texto__header p, .texto__header h1, .texto__header h3{
+        -webkit-text-stroke: 0.7px gray;
+    }
+    
+    @keyframes header {
+        
+        0% {top: -1000px; z-index: 1;}
+        100% {top: 0px; z-index: 1;}
+    }
+    
+    .parallax{
+        background-image: url("https://www.techgamingreport.com/wp-content/uploads/2021/08/how-to-become-a-web-developer.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 100px 0px;
+        padding-top: 250px;
+        width: 100%;
+        height: 42vh;
+    }
+
+    .about__item{
+        text-align: center;
+        margin: 100px 20px;
+        font-size: 15px;
+    }
+    
+    .contenedor__flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border-top-left-radius: 25%;
+        border-top-right-radius: 25%;
+        animation: fade_id 2s backwards 3s;
+    }
+    
+    .contenido__flex{
+        width: 40%;
+        background-image: url("https://images.alphacoders.com/458/thumb-1920-458169.jpg");
+        padding: 100px;
+        border-bottom-left-radius: 25%;
+        border-bottom-right-radius: 25%;
+        margin-bottom: 200px;
+    
+    }
+
+    
+    @keyframes fade_id{
+        0% {opacity: 0;;}
+        100% {opacity: 1;}
+    }
+
+}
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*                                                      ESTILOS PARA CELULAR                                                        */
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+@media screen and (max-width: 860px) {
+    
+    .header{
+        position: relative;
+        height: 100vh;
+        z-index: 100;
+        background-image: url("https://images.alphacoders.com/458/thumb-1920-458169.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .header__nav{
+        position: relative;
+        z-index: 50;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .header__nav-div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .header__nav-div h1{
+        margin-left: 25px;
+    }
+    
+    .header__nav-div a{
+        display: none;
+        color: bisque;
+        text-decoration: none;
+        font-style: none;
+        font-size: 50px;
+        margin-left: 70%;
+    }
+    
+    
+    .texto__header{
+        display: none;
+        position: relative;
+        z-index: 1;
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+        animation: header 2s backwards 0s;
+    }
+    
+    .texto__header-celular{
+        display: block;
+
+    }
+
+    .texto__header-celular-item{
+        position: relative;
+        text-align: center;
+        top: 150px;
+    }
+
+    .texto__header-celular-item h1, .texto__header-celular-item h3{
+        font-size: 40px;
+    }
+
+    .texto__header-celular-item:first-child{
+        animation: h1 3s backwards;
+    }
+
+
+    .texto__header-celular-item:nth-child(2){
+        animation: fade_id 4s backwards 1s;
+    }
+
+    .texto__header-celular-item h5{
+        font-size: 25px;
+    }
+    .texto__header-celular-item:nth-child(3){
+        animation: h3 3s backwards 1s;
+    }
+
+
+    .texto__header-celular-item h1, .texto__header-celular-item h3, .texto__header-celular-item h5{
+        -webkit-text-stroke: 0.7px gray;
+    }
+    
+    @keyframes h1 {
+        
+        0% {top: -500px; opacity: 0; z-index: 1;}
+        100% {top: 150px; opacity: 1; z-index: 1;}
+    }
+
+    @keyframes h3 {
+        
+        0% {top: 500px; opacity: 0; z-index: 1;}
+        100% {top: 150px; opacity: 1; z-index: 1;}
+    }
+
+    
+    .about__item{
+        text-align: center;
+        margin: 40px 10px;
+    }
+
+    .knowledge{
+        position: relative;
+        top: 150px;
+    }
+    
+    .knowledge__item{
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .parallax{
+        background-image: url("https://www.techgamingreport.com/wp-content/uploads/2021/08/how-to-become-a-web-developer.jpg");
+        background-size: cover;
+        margin: 100px 0px;
+        padding: 15% 0px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .contenedor__flex{
+        display: block;
+        animation: fade_id 2s backwards 3s;
+    }
+    
+    .contenido__flex{
+        width: 80%;
+        margin: 0% auto;
+        background-image: url("https://images.alphacoders.com/458/thumb-1920-458169.jpg");
+        padding: 20px;
+        border-radius: 10%;
+        margin-bottom: 10px;
+    
+    }
+
+    @keyframes contenido_flex-a{
+        0% {left: -1000;}
+        100% {left: 0;}
+    }
+
+    @keyframes contenido_flex-b{
+        0% {right: -1000;}
+        100% {right: 0;}
+    }
+    
+    @keyframes fade_id{
+        0% {opacity: 0;;}
+        100% {opacity: 1;}
+    }
+
+}
