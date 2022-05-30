@@ -10,83 +10,95 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cb6ac5c478.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>Portfolio</title>
 </head>
 <body>
     <header class="header">
         <nav class="header__nav">
             <div class="header__nav-div"><h1>My Dev-Folio</h1></div>
-            <div class="header__nav-div"><a target="_blank" href="https://www.linkedin.com/in/juan-mart%C3%ADn-p%C3%A9rez-caraballo-891728235/"><i class="fa-brands fa-linkedin"></i></a></div>
         </nav>
 
         <div class="texto__header">
             <div><h1>I'm<span class="texto__header-span">  Juan Martín</span></h1></div>
-            <h3>Front and Back-end Django Developer.</h3>
+            <h3>Python junior Developer.</h3>
         </div>
 
         <div class="texto__header-celular">
             <div class="texto__header-celular-item"><h3>I'm</h3></div>
             <div class="texto__header-celular-item"><h1>Juan Martín</h1></div>
-            <div class="texto__header-celular-item"><h5>Front and Back-end Django Developer.</h5></div>
+            <div class="texto__header-celular-item"><h5>Python Jr Developer</h5></div>
         </div>
     </header>
 
     <div class="about">
+        <h2 data-aos="flip-left" data-aos-duration="2000">A brief description about me.</h2>
         <div class="about__item">
-            <h2>About me</h2>
-        </div>
-        <div class="about__item">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis minus laudantium, sapiente ea mollitia
-            deserunt voluptates, atque quas accusamus explicabo ipsam eaque beatae culpa harum nemo consequatur nobis tempore veritatis.</p>
-        </div>
-    </div>
+            <div class="about__item-p" data-aos="zoom-in-right" data-aos-duration="1500">
+                <p> Hi! I'm a Junior Developer from Argentina.</p>
+                <p> Nowadays I have 1 year of experience working with python for Data Science and Web development.
+                By now I'm specializing on Webs, but in the future I want to move to Machine Learning and Big Data.</p>
+            </div>
 
-    <div class="knowledge">
-        <div class="knowledge__item">
-            <p>What I know</p>
+            <div class="about__item-foto" data-aos="zoom-in" data-aos-duration="2000">
+                <img src="Selfie.jpg" alt="selfie">
+            </div>
         </div>
     </div>
 
 
     <div class="parallax">
-        <div class="contenedor__flex">
-            <div class="contenido__flex">
-                <div><h1>HTML</h1></div>
-                <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur unde neque, sint cupiditate nulla voluptatum omnis quisquam quis optio odio ut atque voluptate rem vitae quibusdam necessitatibus quam accusantium aperiam.</div>
-            </div>
-            <div class="contenido__flex">
-                <div><h1>CSS</h1></div>
-                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae autem officia nobis ratione corporis cum, unde repudiandae veniam dolorum laudantium neque ipsam voluptatibus illum! Adipisci ullam saepe quasi debitis ipsa?</div>
-            </div>
-        </div>
-
-        <div class="contenedor__flex">
-            <div class="contenido__flex">
-                <div><h1>Bootstrap</h1></div>
-                <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur unde neque, sint cupiditate nulla voluptatum omnis quisquam quis optio odio ut atque voluptate rem vitae quibusdam necessitatibus quam accusantium aperiam.</div>
-            </div>
-            <div class="contenido__flex">
-                <div><h1>Django</h1></div>
-                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae autem officia nobis ratione corporis cum, unde repudiandae veniam dolorum laudantium neque ipsam voluptatibus illum! Adipisci ullam saepe quasi debitis ipsa?</div>
-            </div>
-        </div>
-
-        <div class="contenedor__flex">
-            <div class="contenido__flex">
-                <div><h1>Python</h1></div>
-                <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur unde neque, sint cupiditate nulla voluptatum omnis quisquam quis optio odio ut atque voluptate rem vitae quibusdam necessitatibus quam accusantium aperiam.</div>
-            </div>
-            <div class="contenido__flex">
-                <div><h1>Django</h1></div>
-                <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae autem officia nobis ratione corporis cum, unde repudiandae veniam dolorum laudantium neque ipsam voluptatibus illum! Adipisci ullam saepe quasi debitis ipsa?</div>
+        <div class="knowledge">
+            <div class="knowledge__item" data-aos="flip-left" data-aos-duration="1500">
+                <p>My Experience</p>
             </div>
         </div>
     </div>
     
 
+    <div class="grid">
+        <div class="grid__item-1" data-aos="zoom-in-left" data-aos-duration="1500">
+            <p>I've created automatization programs applying POO for clean, re-organize and analize data obtained from web scrapping, and generate new information. </p>
+        </div>
+
+        <div class="grid__item-1-5" data-aos="zoom-in-right" data-aos-duration="1500">
+            <img src="logo-python.png" alt="python">
+        </div>
+
+        <div class="grid__item-2" data-aos="zoom-in-right" data-aos-duration="1500">
+            <p>I've worked with Machine Learning models, such as Linear Regression, Logistic Regression, Random Forest and Deep Learning using SkLearn and Tensorflow to predict sales,
+                people's interest over time about one product and to make sentiment analisis.</p>
+        </div>
+
+        <div class="grid__item-2-5" data-aos="zoom-in-left" data-aos-duration="1500">
+            <img src="Tensorflow_logo.svg.png" alt="tensorflow">
+        </div>
+
+        <div class="grid__item-3" data-aos="zoom-in-left" data-aos-duration="1500">
+            <p>I was in charge of developing a website for an NFT game: <a target="_blank" href="https://buildcryptolife.com/">BuildCryptoLife</a> with WordPress, and a products stock page with Django.</p>
+        </div>
+
+        <div class="grid__item-3-5" data-aos="zoom-in-right" data-aos-duration="1500">
+            <img src="djangoywordpress.png" alt="python">
+        </div>
+
+        <div class="grid__item-4" data-aos="zoom-in-right" data-aos-duration="1500">
+            <p>I have experience working with SQL databases, Flask and Django Rest-framework to create API's</p>
+        </div>
+
+        <div class="grid__item-4-5" data-aos="zoom-in-left" data-aos-duration="1500">
+            <img src="flaskysql.png" alt="python">
+        </div>
+    </div>
+    <footer>
+        <div><a target="_blank" href="https://www.linkedin.com/in/juan-mart%C3%ADn-p%C3%A9rez-caraballo-891728235/"><i class="fa-brands fa-linkedin"></i></a></div>
+    </footer>
+
+
 </body>
 <script>
-    
+    AOS.init();
 </script>
 </html>
